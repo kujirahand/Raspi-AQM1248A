@@ -6,7 +6,7 @@ AQM1248A Python library for Raspberry Pi
 
 Simple
 
-```python: test1.py
+```python:test1.py
 import AQM1248A
 
 disp = AQM1248A()
@@ -16,7 +16,7 @@ disp.close()
 
 Drawing Bitmap
 
-```python: test2.py
+```python:test2.py
 import AQM1248A
 from PIL import Image
 
