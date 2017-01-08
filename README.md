@@ -4,7 +4,7 @@ AQM1248A Python library for Raspberry Pi
 
 ## USAGE:
 
-Simple
+Simple usage : fill display
 
 ```python:test1.py
 import AQM1248A
