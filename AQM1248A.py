@@ -10,7 +10,7 @@ from PIL import ImageFont
 # ref) https://sakura87.net/archives/2171
 # ref) https://github.com/nobukuma/MicroPythonSushiRotator
 
-class AQM1248A:
+class LCD:
     ''' LCD graphic module AQM1248A library '''
 
     # LCD SETTING
@@ -159,13 +159,13 @@ class AQM1248A:
 
 # --- test code ---
 def test1():
-    disp = AQM1248A()
+    disp = LCD()
     disp.full_display()
     disp.close()
 
 def test2():
     # draw png image
-    disp = AQM1248A()
+    disp = LCD()
     image = Image.open('test.png')
     disp.show(image)
     disp.close()
@@ -174,7 +174,7 @@ def test3():
     # font drawing
     path = '/usr/share/fonts/truetype/fonts-japanese-gothic.ttf'
     # text
-    disp = AQM1248A()
+    disp = LCD()
     image = Image.new('1', (disp.WIDTH, disp.HEIGHT), 0)
     draw = ImageDraw.Draw(image)
     draw.rectangle((0,0,disp.WIDTH, disp.HEIGHT), outline=1, fill=1)
